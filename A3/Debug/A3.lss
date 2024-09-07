@@ -1,0 +1,669 @@
+
+A3.elf:     file format elf32-avr
+
+Sections:
+Idx Name          Size      VMA       LMA       File off  Algn
+  0 .data         00000000  00800200  00800200  00000402  2**0
+                  CONTENTS, ALLOC, LOAD, DATA
+  1 .text         0000038e  00000000  00000000  00000074  2**1
+                  CONTENTS, ALLOC, LOAD, READONLY, CODE
+  2 .bss          0000000b  00800200  00800200  00000402  2**0
+                  ALLOC
+  3 .comment      00000030  00000000  00000000  00000402  2**0
+                  CONTENTS, READONLY
+  4 .note.gnu.avr.deviceinfo 00000040  00000000  00000000  00000434  2**2
+                  CONTENTS, READONLY
+  5 .debug_aranges 00000028  00000000  00000000  00000474  2**0
+                  CONTENTS, READONLY, DEBUGGING
+  6 .debug_info   0000138e  00000000  00000000  0000049c  2**0
+                  CONTENTS, READONLY, DEBUGGING
+  7 .debug_abbrev 00000d4f  00000000  00000000  0000182a  2**0
+                  CONTENTS, READONLY, DEBUGGING
+  8 .debug_line   000004d8  00000000  00000000  00002579  2**0
+                  CONTENTS, READONLY, DEBUGGING
+  9 .debug_frame  00000050  00000000  00000000  00002a54  2**2
+                  CONTENTS, READONLY, DEBUGGING
+ 10 .debug_str    000006fd  00000000  00000000  00002aa4  2**0
+                  CONTENTS, READONLY, DEBUGGING
+ 11 .debug_loc    000004d4  00000000  00000000  000031a1  2**0
+                  CONTENTS, READONLY, DEBUGGING
+ 12 .debug_ranges 00000018  00000000  00000000  00003675  2**0
+                  CONTENTS, READONLY, DEBUGGING
+
+Disassembly of section .text:
+
+00000000 <__vectors>:
+   0:	7b c0       	rjmp	.+246    	; 0xf8 <__ctors_end>
+   2:	00 00       	nop
+   4:	8b c0       	rjmp	.+278    	; 0x11c <__bad_interrupt>
+   6:	00 00       	nop
+   8:	89 c0       	rjmp	.+274    	; 0x11c <__bad_interrupt>
+   a:	00 00       	nop
+   c:	87 c0       	rjmp	.+270    	; 0x11c <__bad_interrupt>
+   e:	00 00       	nop
+  10:	85 c0       	rjmp	.+266    	; 0x11c <__bad_interrupt>
+  12:	00 00       	nop
+  14:	83 c0       	rjmp	.+262    	; 0x11c <__bad_interrupt>
+  16:	00 00       	nop
+  18:	81 c0       	rjmp	.+258    	; 0x11c <__bad_interrupt>
+  1a:	00 00       	nop
+  1c:	7f c0       	rjmp	.+254    	; 0x11c <__bad_interrupt>
+  1e:	00 00       	nop
+  20:	7d c0       	rjmp	.+250    	; 0x11c <__bad_interrupt>
+  22:	00 00       	nop
+  24:	7b c0       	rjmp	.+246    	; 0x11c <__bad_interrupt>
+  26:	00 00       	nop
+  28:	79 c0       	rjmp	.+242    	; 0x11c <__bad_interrupt>
+  2a:	00 00       	nop
+  2c:	77 c0       	rjmp	.+238    	; 0x11c <__bad_interrupt>
+  2e:	00 00       	nop
+  30:	75 c0       	rjmp	.+234    	; 0x11c <__bad_interrupt>
+  32:	00 00       	nop
+  34:	73 c0       	rjmp	.+230    	; 0x11c <__bad_interrupt>
+  36:	00 00       	nop
+  38:	71 c0       	rjmp	.+226    	; 0x11c <__bad_interrupt>
+  3a:	00 00       	nop
+  3c:	6f c0       	rjmp	.+222    	; 0x11c <__bad_interrupt>
+  3e:	00 00       	nop
+  40:	6d c0       	rjmp	.+218    	; 0x11c <__bad_interrupt>
+  42:	00 00       	nop
+  44:	6b c0       	rjmp	.+214    	; 0x11c <__bad_interrupt>
+  46:	00 00       	nop
+  48:	69 c0       	rjmp	.+210    	; 0x11c <__bad_interrupt>
+  4a:	00 00       	nop
+  4c:	67 c0       	rjmp	.+206    	; 0x11c <__bad_interrupt>
+  4e:	00 00       	nop
+  50:	65 c0       	rjmp	.+202    	; 0x11c <__bad_interrupt>
+  52:	00 00       	nop
+  54:	63 c0       	rjmp	.+198    	; 0x11c <__bad_interrupt>
+  56:	00 00       	nop
+  58:	61 c0       	rjmp	.+194    	; 0x11c <__bad_interrupt>
+  5a:	00 00       	nop
+  5c:	5f c0       	rjmp	.+190    	; 0x11c <__bad_interrupt>
+  5e:	00 00       	nop
+  60:	5d c0       	rjmp	.+186    	; 0x11c <__bad_interrupt>
+  62:	00 00       	nop
+  64:	5b c0       	rjmp	.+182    	; 0x11c <__bad_interrupt>
+  66:	00 00       	nop
+  68:	59 c0       	rjmp	.+178    	; 0x11c <__bad_interrupt>
+  6a:	00 00       	nop
+  6c:	57 c0       	rjmp	.+174    	; 0x11c <__bad_interrupt>
+  6e:	00 00       	nop
+  70:	55 c0       	rjmp	.+170    	; 0x11c <__bad_interrupt>
+  72:	00 00       	nop
+  74:	53 c0       	rjmp	.+166    	; 0x11c <__bad_interrupt>
+  76:	00 00       	nop
+  78:	51 c0       	rjmp	.+162    	; 0x11c <__bad_interrupt>
+  7a:	00 00       	nop
+  7c:	4f c0       	rjmp	.+158    	; 0x11c <__bad_interrupt>
+  7e:	00 00       	nop
+  80:	4d c0       	rjmp	.+154    	; 0x11c <__bad_interrupt>
+  82:	00 00       	nop
+  84:	4b c0       	rjmp	.+150    	; 0x11c <__bad_interrupt>
+  86:	00 00       	nop
+  88:	49 c0       	rjmp	.+146    	; 0x11c <__bad_interrupt>
+  8a:	00 00       	nop
+  8c:	47 c0       	rjmp	.+142    	; 0x11c <__bad_interrupt>
+  8e:	00 00       	nop
+  90:	45 c0       	rjmp	.+138    	; 0x11c <__bad_interrupt>
+  92:	00 00       	nop
+  94:	43 c0       	rjmp	.+134    	; 0x11c <__bad_interrupt>
+  96:	00 00       	nop
+  98:	41 c0       	rjmp	.+130    	; 0x11c <__bad_interrupt>
+  9a:	00 00       	nop
+  9c:	3f c0       	rjmp	.+126    	; 0x11c <__bad_interrupt>
+  9e:	00 00       	nop
+  a0:	3d c0       	rjmp	.+122    	; 0x11c <__bad_interrupt>
+  a2:	00 00       	nop
+  a4:	3b c0       	rjmp	.+118    	; 0x11c <__bad_interrupt>
+  a6:	00 00       	nop
+  a8:	39 c0       	rjmp	.+114    	; 0x11c <__bad_interrupt>
+  aa:	00 00       	nop
+  ac:	37 c0       	rjmp	.+110    	; 0x11c <__bad_interrupt>
+  ae:	00 00       	nop
+  b0:	35 c0       	rjmp	.+106    	; 0x11c <__bad_interrupt>
+  b2:	00 00       	nop
+  b4:	33 c0       	rjmp	.+102    	; 0x11c <__bad_interrupt>
+  b6:	00 00       	nop
+  b8:	31 c0       	rjmp	.+98     	; 0x11c <__bad_interrupt>
+  ba:	00 00       	nop
+  bc:	2f c0       	rjmp	.+94     	; 0x11c <__bad_interrupt>
+  be:	00 00       	nop
+  c0:	2d c0       	rjmp	.+90     	; 0x11c <__bad_interrupt>
+  c2:	00 00       	nop
+  c4:	2b c0       	rjmp	.+86     	; 0x11c <__bad_interrupt>
+  c6:	00 00       	nop
+  c8:	29 c0       	rjmp	.+82     	; 0x11c <__bad_interrupt>
+  ca:	00 00       	nop
+  cc:	27 c0       	rjmp	.+78     	; 0x11c <__bad_interrupt>
+  ce:	00 00       	nop
+  d0:	25 c0       	rjmp	.+74     	; 0x11c <__bad_interrupt>
+  d2:	00 00       	nop
+  d4:	23 c0       	rjmp	.+70     	; 0x11c <__bad_interrupt>
+  d6:	00 00       	nop
+  d8:	21 c0       	rjmp	.+66     	; 0x11c <__bad_interrupt>
+  da:	00 00       	nop
+  dc:	1f c0       	rjmp	.+62     	; 0x11c <__bad_interrupt>
+  de:	00 00       	nop
+  e0:	1d c0       	rjmp	.+58     	; 0x11c <__bad_interrupt>
+  e2:	00 00       	nop
+  e4:	aa 00       	.word	0x00aa	; ????
+  e6:	af 00       	.word	0x00af	; ????
+  e8:	b4 00       	.word	0x00b4	; ????
+  ea:	b9 00       	.word	0x00b9	; ????
+  ec:	be 00       	.word	0x00be	; ????
+  ee:	c3 00       	.word	0x00c3	; ????
+  f0:	c8 00       	.word	0x00c8	; ????
+  f2:	cd 00       	.word	0x00cd	; ????
+  f4:	d2 00       	.word	0x00d2	; ????
+  f6:	d7 00       	.word	0x00d7	; ????
+
+000000f8 <__ctors_end>:
+  f8:	11 24       	eor	r1, r1
+  fa:	1f be       	out	0x3f, r1	; 63
+  fc:	cf ef       	ldi	r28, 0xFF	; 255
+  fe:	d1 e2       	ldi	r29, 0x21	; 33
+ 100:	de bf       	out	0x3e, r29	; 62
+ 102:	cd bf       	out	0x3d, r28	; 61
+ 104:	00 e0       	ldi	r16, 0x00	; 0
+ 106:	0c bf       	out	0x3c, r16	; 60
+
+00000108 <__do_clear_bss>:
+ 108:	22 e0       	ldi	r18, 0x02	; 2
+ 10a:	a0 e0       	ldi	r26, 0x00	; 0
+ 10c:	b2 e0       	ldi	r27, 0x02	; 2
+ 10e:	01 c0       	rjmp	.+2      	; 0x112 <.do_clear_bss_start>
+
+00000110 <.do_clear_bss_loop>:
+ 110:	1d 92       	st	X+, r1
+
+00000112 <.do_clear_bss_start>:
+ 112:	ab 30       	cpi	r26, 0x0B	; 11
+ 114:	b2 07       	cpc	r27, r18
+ 116:	e1 f7       	brne	.-8      	; 0x110 <.do_clear_bss_loop>
+ 118:	5a d0       	rcall	.+180    	; 0x1ce <main>
+ 11a:	37 c1       	rjmp	.+622    	; 0x38a <_exit>
+
+0000011c <__bad_interrupt>:
+ 11c:	71 cf       	rjmp	.-286    	; 0x0 <__vectors>
+
+0000011e <_ZN8DigiPortC1Ehhh>:
+		uint8_t inline read_raw(uint8_t maske = 0xFF);
+		uint8_t inline read_busy_wait(uint8_t maske = 0xFF);
+};
+
+// Prozeduren
+DigiPort::DigiPort(uint8_t PN,uint8_t M,uint8_t AS){
+ 11e:	cf 93       	push	r28
+ 120:	df 93       	push	r29
+ 122:	ec 01       	movw	r28, r24
+		Mode = M;
+ 124:	4a 83       	std	Y+2, r20	; 0x02
+		ActiveStatus = AS;
+ 126:	2b 83       	std	Y+3, r18	; 0x03
+	if(PortNumber[PN-1] == 0){
+ 128:	26 2f       	mov	r18, r22
+ 12a:	30 e0       	ldi	r19, 0x00	; 0
+ 12c:	21 50       	subi	r18, 0x01	; 1
+ 12e:	31 09       	sbc	r19, r1
+ 130:	d9 01       	movw	r26, r18
+ 132:	a0 50       	subi	r26, 0x00	; 0
+ 134:	be 4f       	sbci	r27, 0xFE	; 254
+ 136:	8c 91       	ld	r24, X
+ 138:	81 11       	cpse	r24, r1
+ 13a:	46 c0       	rjmp	.+140    	; 0x1c8 <_ZN8DigiPortC1Ehhh+0xaa>
+		switch(PN){
+ 13c:	86 2f       	mov	r24, r22
+ 13e:	90 e0       	ldi	r25, 0x00	; 0
+ 140:	fc 01       	movw	r30, r24
+ 142:	31 97       	sbiw	r30, 0x01	; 1
+ 144:	ea 30       	cpi	r30, 0x0A	; 10
+ 146:	f1 05       	cpc	r31, r1
+ 148:	b0 f5       	brcc	.+108    	; 0x1b6 <_ZN8DigiPortC1Ehhh+0x98>
+ 14a:	88 27       	eor	r24, r24
+ 14c:	ee 58       	subi	r30, 0x8E	; 142
+ 14e:	ff 4f       	sbci	r31, 0xFF	; 255
+ 150:	8f 4f       	sbci	r24, 0xFF	; 255
+ 152:	13 c1       	rjmp	.+550    	; 0x37a <__tablejump2__>
+			case PA:
+			Portreg = &DDRA;
+ 154:	81 e2       	ldi	r24, 0x21	; 33
+ 156:	90 e0       	ldi	r25, 0x00	; 0
+ 158:	99 83       	std	Y+1, r25	; 0x01
+ 15a:	88 83       	st	Y, r24
+			break;
+ 15c:	2c c0       	rjmp	.+88     	; 0x1b6 <_ZN8DigiPortC1Ehhh+0x98>
+			
+			case PB:
+			Portreg = &DDRB;
+ 15e:	84 e2       	ldi	r24, 0x24	; 36
+ 160:	90 e0       	ldi	r25, 0x00	; 0
+ 162:	99 83       	std	Y+1, r25	; 0x01
+ 164:	88 83       	st	Y, r24
+			break;
+ 166:	27 c0       	rjmp	.+78     	; 0x1b6 <_ZN8DigiPortC1Ehhh+0x98>
+			
+			case PC:
+			Portreg = &DDRC;
+ 168:	87 e2       	ldi	r24, 0x27	; 39
+ 16a:	90 e0       	ldi	r25, 0x00	; 0
+ 16c:	99 83       	std	Y+1, r25	; 0x01
+ 16e:	88 83       	st	Y, r24
+			break;
+ 170:	22 c0       	rjmp	.+68     	; 0x1b6 <_ZN8DigiPortC1Ehhh+0x98>
+			
+			case PD:
+			Portreg = &DDRD;
+ 172:	8a e2       	ldi	r24, 0x2A	; 42
+ 174:	90 e0       	ldi	r25, 0x00	; 0
+ 176:	99 83       	std	Y+1, r25	; 0x01
+ 178:	88 83       	st	Y, r24
+			break;
+ 17a:	1d c0       	rjmp	.+58     	; 0x1b6 <_ZN8DigiPortC1Ehhh+0x98>
+			
+			case PE:
+			Portreg = &DDRE;
+ 17c:	8d e2       	ldi	r24, 0x2D	; 45
+ 17e:	90 e0       	ldi	r25, 0x00	; 0
+ 180:	99 83       	std	Y+1, r25	; 0x01
+ 182:	88 83       	st	Y, r24
+			break;
+ 184:	18 c0       	rjmp	.+48     	; 0x1b6 <_ZN8DigiPortC1Ehhh+0x98>
+			
+			case PF:
+			Portreg = &DDRF;
+ 186:	80 e3       	ldi	r24, 0x30	; 48
+ 188:	90 e0       	ldi	r25, 0x00	; 0
+ 18a:	99 83       	std	Y+1, r25	; 0x01
+ 18c:	88 83       	st	Y, r24
+			break;
+ 18e:	13 c0       	rjmp	.+38     	; 0x1b6 <_ZN8DigiPortC1Ehhh+0x98>
+			
+			case PG:
+			Portreg = &DDRG;
+ 190:	83 e3       	ldi	r24, 0x33	; 51
+ 192:	90 e0       	ldi	r25, 0x00	; 0
+ 194:	99 83       	std	Y+1, r25	; 0x01
+ 196:	88 83       	st	Y, r24
+			break;
+ 198:	0e c0       	rjmp	.+28     	; 0x1b6 <_ZN8DigiPortC1Ehhh+0x98>
+			
+			case PH:
+			Portreg = &DDRH;
+ 19a:	81 e0       	ldi	r24, 0x01	; 1
+ 19c:	91 e0       	ldi	r25, 0x01	; 1
+ 19e:	99 83       	std	Y+1, r25	; 0x01
+ 1a0:	88 83       	st	Y, r24
+			break;
+ 1a2:	09 c0       	rjmp	.+18     	; 0x1b6 <_ZN8DigiPortC1Ehhh+0x98>
+			
+			case PJ:
+			Portreg = &DDRJ;
+ 1a4:	84 e0       	ldi	r24, 0x04	; 4
+ 1a6:	91 e0       	ldi	r25, 0x01	; 1
+ 1a8:	99 83       	std	Y+1, r25	; 0x01
+ 1aa:	88 83       	st	Y, r24
+			break;
+ 1ac:	04 c0       	rjmp	.+8      	; 0x1b6 <_ZN8DigiPortC1Ehhh+0x98>
+
+			case PK:
+			Portreg = &DDRK;
+ 1ae:	87 e0       	ldi	r24, 0x07	; 7
+ 1b0:	91 e0       	ldi	r25, 0x01	; 1
+ 1b2:	99 83       	std	Y+1, r25	; 0x01
+ 1b4:	88 83       	st	Y, r24
+			break;
+		}
+		*Portreg = M;		// DDRXvalue set to Input/Output 
+ 1b6:	e8 81       	ld	r30, Y
+ 1b8:	f9 81       	ldd	r31, Y+1	; 0x01
+ 1ba:	40 83       	st	Z, r20
+		PortNumber[PN-1]++;
+ 1bc:	f9 01       	movw	r30, r18
+ 1be:	e0 50       	subi	r30, 0x00	; 0
+ 1c0:	fe 4f       	sbci	r31, 0xFE	; 254
+ 1c2:	80 81       	ld	r24, Z
+ 1c4:	8f 5f       	subi	r24, 0xFF	; 255
+ 1c6:	80 83       	st	Z, r24
+	}
+		
+		
+
+}
+ 1c8:	df 91       	pop	r29
+ 1ca:	cf 91       	pop	r28
+ 1cc:	08 95       	ret
+
+000001ce <main>:
+#include <util/delay.h>
+#include "DigiPort.h"
+
+
+int main(void)
+{
+ 1ce:	cf 93       	push	r28
+ 1d0:	df 93       	push	r29
+ 1d2:	cd b7       	in	r28, 0x3d	; 61
+ 1d4:	de b7       	in	r29, 0x3e	; 62
+ 1d6:	28 97       	sbiw	r28, 0x08	; 8
+ 1d8:	0f b6       	in	r0, 0x3f	; 63
+ 1da:	f8 94       	cli
+ 1dc:	de bf       	out	0x3e, r29	; 62
+ 1de:	0f be       	out	0x3f, r0	; 63
+ 1e0:	cd bf       	out	0x3d, r28	; 61
+	DigiPort ledport(PA, SET_OUT_PORT, SET_ACTIVE_LOW);
+ 1e2:	20 e0       	ldi	r18, 0x00	; 0
+ 1e4:	4f ef       	ldi	r20, 0xFF	; 255
+ 1e6:	61 e0       	ldi	r22, 0x01	; 1
+ 1e8:	ce 01       	movw	r24, r28
+ 1ea:	01 96       	adiw	r24, 0x01	; 1
+ 1ec:	98 df       	rcall	.-208    	; 0x11e <_ZN8DigiPortC1Ehhh>
+	DigiPort swport(PK, SET_IN_PORT, SET_ACTIVE_LOW);
+ 1ee:	20 e0       	ldi	r18, 0x00	; 0
+ 1f0:	40 e0       	ldi	r20, 0x00	; 0
+ 1f2:	6a e0       	ldi	r22, 0x0A	; 10
+ 1f4:	ce 01       	movw	r24, r28
+ 1f6:	05 96       	adiw	r24, 0x05	; 5
+ 1f8:	92 df       	rcall	.-220    	; 0x11e <_ZN8DigiPortC1Ehhh>
+
+void inline DigiPort::write(uint8_t bits){
+	if(ActiveStatus == SET_ACTIVE_HIGH){
+ 1fa:	8c 81       	ldd	r24, Y+4	; 0x04
+ 1fc:	8f 3f       	cpi	r24, 0xFF	; 255
+ 1fe:	29 f4       	brne	.+10     	; 0x20a <main+0x3c>
+		*(Portreg+1) = ~(uint8_t)(bits);	// active high
+ 200:	e9 81       	ldd	r30, Y+1	; 0x01
+ 202:	fa 81       	ldd	r31, Y+2	; 0x02
+ 204:	85 e5       	ldi	r24, 0x55	; 85
+ 206:	81 83       	std	Z+1, r24	; 0x01
+ 208:	04 c0       	rjmp	.+8      	; 0x212 <main+0x44>
+	}
+	else{
+		*(Portreg+1) = (uint8_t)(bits);	// active low
+ 20a:	e9 81       	ldd	r30, Y+1	; 0x01
+ 20c:	fa 81       	ldd	r31, Y+2	; 0x02
+ 20e:	8a ea       	ldi	r24, 0xAA	; 170
+ 210:	81 83       	std	Z+1, r24	; 0x01
+	#else
+		//round up by default
+		__ticks_dc = (uint32_t)(ceil(fabs(__tmp)));
+	#endif
+
+	__builtin_avr_delay_cycles(__ticks_dc);
+ 212:	2f ef       	ldi	r18, 0xFF	; 255
+ 214:	39 e6       	ldi	r19, 0x69	; 105
+ 216:	88 e1       	ldi	r24, 0x18	; 24
+ 218:	21 50       	subi	r18, 0x01	; 1
+ 21a:	30 40       	sbci	r19, 0x00	; 0
+ 21c:	80 40       	sbci	r24, 0x00	; 0
+ 21e:	e1 f7       	brne	.-8      	; 0x218 <main+0x4a>
+ 220:	00 c0       	rjmp	.+0      	; 0x222 <main+0x54>
+ 222:	00 00       	nop
+		*(Portreg+1) &= ~(uint8_t)(bits); //active low
+	}
+}
+
+void inline DigiPort::off(uint8_t bits){
+	if(ActiveStatus == SET_ACTIVE_HIGH){
+ 224:	8c 81       	ldd	r24, Y+4	; 0x04
+ 226:	8f 3f       	cpi	r24, 0xFF	; 255
+ 228:	31 f4       	brne	.+12     	; 0x236 <main+0x68>
+		*(Portreg+1) &= ~(uint8_t)(bits); //active high
+ 22a:	e9 81       	ldd	r30, Y+1	; 0x01
+ 22c:	fa 81       	ldd	r31, Y+2	; 0x02
+ 22e:	81 81       	ldd	r24, Z+1	; 0x01
+ 230:	80 7f       	andi	r24, 0xF0	; 240
+ 232:	81 83       	std	Z+1, r24	; 0x01
+ 234:	05 c0       	rjmp	.+10     	; 0x240 <main+0x72>
+	}
+	else{
+		*(Portreg+1) |= (uint8_t)(bits); // active low
+ 236:	e9 81       	ldd	r30, Y+1	; 0x01
+ 238:	fa 81       	ldd	r31, Y+2	; 0x02
+ 23a:	81 81       	ldd	r24, Z+1	; 0x01
+ 23c:	8f 60       	ori	r24, 0x0F	; 15
+ 23e:	81 83       	std	Z+1, r24	; 0x01
+ 240:	9f ef       	ldi	r25, 0xFF	; 255
+ 242:	29 e6       	ldi	r18, 0x69	; 105
+ 244:	38 e1       	ldi	r19, 0x18	; 24
+ 246:	91 50       	subi	r25, 0x01	; 1
+ 248:	20 40       	sbci	r18, 0x00	; 0
+ 24a:	30 40       	sbci	r19, 0x00	; 0
+ 24c:	e1 f7       	brne	.-8      	; 0x246 <main+0x78>
+ 24e:	00 c0       	rjmp	.+0      	; 0x250 <main+0x82>
+ 250:	00 00       	nop
+void inline DigiPort::toggle(uint8_t bits){
+	*(Portreg+1) ^= (uint8_t)(bits); // xor
+}
+
+void inline DigiPort::on(uint8_t bits){
+	if(ActiveStatus == SET_ACTIVE_HIGH){
+ 252:	8c 81       	ldd	r24, Y+4	; 0x04
+ 254:	8f 3f       	cpi	r24, 0xFF	; 255
+ 256:	31 f4       	brne	.+12     	; 0x264 <main+0x96>
+		*(Portreg+1) |= (uint8_t)(bits);  //active high
+ 258:	e9 81       	ldd	r30, Y+1	; 0x01
+ 25a:	fa 81       	ldd	r31, Y+2	; 0x02
+ 25c:	81 81       	ldd	r24, Z+1	; 0x01
+ 25e:	80 6f       	ori	r24, 0xF0	; 240
+ 260:	81 83       	std	Z+1, r24	; 0x01
+ 262:	05 c0       	rjmp	.+10     	; 0x26e <main+0xa0>
+	}
+	else{
+		*(Portreg+1) &= ~(uint8_t)(bits); //active low
+ 264:	e9 81       	ldd	r30, Y+1	; 0x01
+ 266:	fa 81       	ldd	r31, Y+2	; 0x02
+ 268:	81 81       	ldd	r24, Z+1	; 0x01
+ 26a:	8f 70       	andi	r24, 0x0F	; 15
+ 26c:	81 83       	std	Z+1, r24	; 0x01
+ 26e:	8f ef       	ldi	r24, 0xFF	; 255
+ 270:	99 e6       	ldi	r25, 0x69	; 105
+ 272:	28 e1       	ldi	r18, 0x18	; 24
+ 274:	81 50       	subi	r24, 0x01	; 1
+ 276:	90 40       	sbci	r25, 0x00	; 0
+ 278:	20 40       	sbci	r18, 0x00	; 0
+ 27a:	e1 f7       	brne	.-8      	; 0x274 <main+0xa6>
+ 27c:	00 c0       	rjmp	.+0      	; 0x27e <main+0xb0>
+ 27e:	00 00       	nop
+		*(Portreg+1) = (uint8_t)(bits);	// active low
+	}
+}
+
+void inline DigiPort::toggle(uint8_t bits){
+	*(Portreg+1) ^= (uint8_t)(bits); // xor
+ 280:	e9 81       	ldd	r30, Y+1	; 0x01
+ 282:	fa 81       	ldd	r31, Y+2	; 0x02
+ 284:	91 81       	ldd	r25, Z+1	; 0x01
+ 286:	8c e3       	ldi	r24, 0x3C	; 60
+ 288:	98 27       	eor	r25, r24
+ 28a:	91 83       	std	Z+1, r25	; 0x01
+ 28c:	3f ef       	ldi	r19, 0xFF	; 255
+ 28e:	99 e6       	ldi	r25, 0x69	; 105
+ 290:	28 e1       	ldi	r18, 0x18	; 24
+ 292:	31 50       	subi	r19, 0x01	; 1
+ 294:	90 40       	sbci	r25, 0x00	; 0
+ 296:	20 40       	sbci	r18, 0x00	; 0
+ 298:	e1 f7       	brne	.-8      	; 0x292 <main+0xc4>
+ 29a:	00 c0       	rjmp	.+0      	; 0x29c <main+0xce>
+ 29c:	00 00       	nop
+ 29e:	e9 81       	ldd	r30, Y+1	; 0x01
+ 2a0:	fa 81       	ldd	r31, Y+2	; 0x02
+ 2a2:	91 81       	ldd	r25, Z+1	; 0x01
+ 2a4:	89 27       	eor	r24, r25
+ 2a6:	81 83       	std	Z+1, r24	; 0x01
+ 2a8:	3f ef       	ldi	r19, 0xFF	; 255
+ 2aa:	83 ed       	ldi	r24, 0xD3	; 211
+ 2ac:	90 e3       	ldi	r25, 0x30	; 48
+ 2ae:	31 50       	subi	r19, 0x01	; 1
+ 2b0:	80 40       	sbci	r24, 0x00	; 0
+ 2b2:	90 40       	sbci	r25, 0x00	; 0
+ 2b4:	e1 f7       	brne	.-8      	; 0x2ae <main+0xe0>
+ 2b6:	00 c0       	rjmp	.+0      	; 0x2b8 <main+0xea>
+ 2b8:	00 00       	nop
+ 2ba:	e9 81       	ldd	r30, Y+1	; 0x01
+ 2bc:	fa 81       	ldd	r31, Y+2	; 0x02
+ 2be:	81 81       	ldd	r24, Z+1	; 0x01
+ 2c0:	80 95       	com	r24
+ 2c2:	81 83       	std	Z+1, r24	; 0x01
+ 2c4:	2f ef       	ldi	r18, 0xFF	; 255
+ 2c6:	33 e2       	ldi	r19, 0x23	; 35
+ 2c8:	84 ef       	ldi	r24, 0xF4	; 244
+ 2ca:	21 50       	subi	r18, 0x01	; 1
+ 2cc:	30 40       	sbci	r19, 0x00	; 0
+ 2ce:	80 40       	sbci	r24, 0x00	; 0
+ 2d0:	e1 f7       	brne	.-8      	; 0x2ca <main+0xfc>
+ 2d2:	00 c0       	rjmp	.+0      	; 0x2d4 <main+0x106>
+ 2d4:	00 00       	nop
+ 2d6:	e9 81       	ldd	r30, Y+1	; 0x01
+ 2d8:	fa 81       	ldd	r31, Y+2	; 0x02
+ 2da:	81 81       	ldd	r24, Z+1	; 0x01
+ 2dc:	80 95       	com	r24
+ 2de:	81 83       	std	Z+1, r24	; 0x01
+ 2e0:	9f ef       	ldi	r25, 0xFF	; 255
+ 2e2:	23 e2       	ldi	r18, 0x23	; 35
+ 2e4:	34 ef       	ldi	r19, 0xF4	; 244
+ 2e6:	91 50       	subi	r25, 0x01	; 1
+ 2e8:	20 40       	sbci	r18, 0x00	; 0
+ 2ea:	30 40       	sbci	r19, 0x00	; 0
+ 2ec:	e1 f7       	brne	.-8      	; 0x2e6 <main+0x118>
+ 2ee:	00 c0       	rjmp	.+0      	; 0x2f0 <main+0x122>
+ 2f0:	00 00       	nop
+ 2f2:	e9 81       	ldd	r30, Y+1	; 0x01
+ 2f4:	fa 81       	ldd	r31, Y+2	; 0x02
+ 2f6:	81 81       	ldd	r24, Z+1	; 0x01
+ 2f8:	80 95       	com	r24
+ 2fa:	81 83       	std	Z+1, r24	; 0x01
+		*(Portreg+1) |= (uint8_t)(bits); // active low
+	}
+}
+
+uint8_t inline DigiPort::read_raw(uint8_t maske){
+	if(ActiveStatus == SET_ACTIVE_HIGH){
+ 2fc:	88 85       	ldd	r24, Y+8	; 0x08
+ 2fe:	8f 3f       	cpi	r24, 0xFF	; 255
+ 300:	29 f4       	brne	.+10     	; 0x30c <main+0x13e>
+		return *(Portreg-1) |= ~(uint8_t)(maske); // active high
+ 302:	ed 81       	ldd	r30, Y+5	; 0x05
+ 304:	fe 81       	ldd	r31, Y+6	; 0x06
+ 306:	82 91       	ld	r24, -Z
+ 308:	80 83       	st	Z, r24
+ 30a:	04 c0       	rjmp	.+8      	; 0x314 <main+0x146>
+	}
+	else{
+		return *(Portreg-1) &= (uint8_t)(maske); // active low
+ 30c:	ed 81       	ldd	r30, Y+5	; 0x05
+ 30e:	fe 81       	ldd	r31, Y+6	; 0x06
+ 310:	82 91       	ld	r24, -Z
+ 312:	80 83       	st	Z, r24
+		*(Portreg+1) |= (uint8_t)(bits); // active low
+	}
+}
+
+uint8_t inline DigiPort::read_raw(uint8_t maske){
+	if(ActiveStatus == SET_ACTIVE_HIGH){
+ 314:	98 85       	ldd	r25, Y+8	; 0x08
+ 316:	9f 3f       	cpi	r25, 0xFF	; 255
+ 318:	29 f4       	brne	.+10     	; 0x324 <main+0x156>
+		return *(Portreg-1) |= ~(uint8_t)(maske); // active high
+ 31a:	ed 81       	ldd	r30, Y+5	; 0x05
+ 31c:	fe 81       	ldd	r31, Y+6	; 0x06
+ 31e:	92 91       	ld	r25, -Z
+ 320:	90 83       	st	Z, r25
+ 322:	04 c0       	rjmp	.+8      	; 0x32c <main+0x15e>
+	}
+	else{
+		return *(Portreg-1) &= (uint8_t)(maske); // active low
+ 324:	ed 81       	ldd	r30, Y+5	; 0x05
+ 326:	fe 81       	ldd	r31, Y+6	; 0x06
+ 328:	92 91       	ld	r25, -Z
+ 32a:	90 83       	st	Z, r25
+	
+}
+
+uint8_t inline DigiPort::read_busy_wait(uint8_t maske){
+	uint8_t temp = read_raw();
+	do{
+ 32c:	89 17       	cp	r24, r25
+ 32e:	91 f3       	breq	.-28     	; 0x314 <main+0x146>
+		*(Portreg+1) &= ~(uint8_t)(bits); //active low
+	}
+}
+
+void inline DigiPort::off(uint8_t bits){
+	if(ActiveStatus == SET_ACTIVE_HIGH){
+ 330:	8c 81       	ldd	r24, Y+4	; 0x04
+ 332:	8f 3f       	cpi	r24, 0xFF	; 255
+ 334:	29 f4       	brne	.+10     	; 0x340 <main+0x172>
+		*(Portreg+1) &= ~(uint8_t)(bits); //active high
+ 336:	e9 81       	ldd	r30, Y+1	; 0x01
+ 338:	fa 81       	ldd	r31, Y+2	; 0x02
+ 33a:	81 81       	ldd	r24, Z+1	; 0x01
+ 33c:	11 82       	std	Z+1, r1	; 0x01
+ 33e:	05 c0       	rjmp	.+10     	; 0x34a <main+0x17c>
+	}
+	else{
+		*(Portreg+1) |= (uint8_t)(bits); // active low
+ 340:	e9 81       	ldd	r30, Y+1	; 0x01
+ 342:	fa 81       	ldd	r31, Y+2	; 0x02
+ 344:	81 81       	ldd	r24, Z+1	; 0x01
+ 346:	8f ef       	ldi	r24, 0xFF	; 255
+ 348:	81 83       	std	Z+1, r24	; 0x01
+	}
+}
+
+uint8_t inline DigiPort::read_raw(uint8_t maske){
+	if(ActiveStatus == SET_ACTIVE_HIGH){
+ 34a:	88 85       	ldd	r24, Y+8	; 0x08
+ 34c:	8f 3f       	cpi	r24, 0xFF	; 255
+ 34e:	29 f4       	brne	.+10     	; 0x35a <main+0x18c>
+		return *(Portreg-1) |= ~(uint8_t)(maske); // active high
+ 350:	ed 81       	ldd	r30, Y+5	; 0x05
+ 352:	fe 81       	ldd	r31, Y+6	; 0x06
+ 354:	82 91       	ld	r24, -Z
+ 356:	80 83       	st	Z, r24
+ 358:	04 c0       	rjmp	.+8      	; 0x362 <main+0x194>
+	}
+	else{
+		return *(Portreg-1) &= (uint8_t)(maske); // active low
+ 35a:	ed 81       	ldd	r30, Y+5	; 0x05
+ 35c:	fe 81       	ldd	r31, Y+6	; 0x06
+ 35e:	82 91       	ld	r24, -Z
+ 360:	80 83       	st	Z, r24
+		
+
+}
+
+void inline DigiPort::write(uint8_t bits){
+	if(ActiveStatus == SET_ACTIVE_HIGH){
+ 362:	9c 81       	ldd	r25, Y+4	; 0x04
+ 364:	9f 3f       	cpi	r25, 0xFF	; 255
+ 366:	29 f4       	brne	.+10     	; 0x372 <main+0x1a4>
+		*(Portreg+1) = ~(uint8_t)(bits);	// active high
+ 368:	e9 81       	ldd	r30, Y+1	; 0x01
+ 36a:	fa 81       	ldd	r31, Y+2	; 0x02
+ 36c:	80 95       	com	r24
+ 36e:	81 83       	std	Z+1, r24	; 0x01
+ 370:	ec cf       	rjmp	.-40     	; 0x34a <main+0x17c>
+	}
+	else{
+		*(Portreg+1) = (uint8_t)(bits);	// active low
+ 372:	e9 81       	ldd	r30, Y+1	; 0x01
+ 374:	fa 81       	ldd	r31, Y+2	; 0x02
+ 376:	81 83       	std	Z+1, r24	; 0x01
+ 378:	e8 cf       	rjmp	.-48     	; 0x34a <main+0x17c>
+
+0000037a <__tablejump2__>:
+ 37a:	ee 0f       	add	r30, r30
+ 37c:	ff 1f       	adc	r31, r31
+ 37e:	88 1f       	adc	r24, r24
+ 380:	8b bf       	out	0x3b, r24	; 59
+ 382:	07 90       	elpm	r0, Z+
+ 384:	f6 91       	elpm	r31, Z
+ 386:	e0 2d       	mov	r30, r0
+ 388:	19 94       	eijmp
+
+0000038a <_exit>:
+ 38a:	f8 94       	cli
+
+0000038c <__stop_program>:
+ 38c:	ff cf       	rjmp	.-2      	; 0x38c <__stop_program>

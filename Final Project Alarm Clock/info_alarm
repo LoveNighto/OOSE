@@ -1,0 +1,5 @@
+This source code can only be used with modules from our Professor in Hochschule Kaisersluatern and can only be used in a specific AVR Machine.
+
+The source code contain words/commenting in German. 
+
+The source code combine a Timers for the clock itself and an alarm, multiple sensors like humidity, temperatur and multiple buttons. All of them are connected into 2 Lines of display LCD.

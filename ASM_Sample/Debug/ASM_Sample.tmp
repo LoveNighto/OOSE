@@ -1,0 +1,32 @@
+<ASSEMBLER_INFO>
+ <VERSION>2.2.8</VERSION>
+ <DEVICE>"ATmega2560"</DEVICE>
+ <WORKING_DIR>C:\Users\Me\Desktop\Coolyeah\OoSe\Code_Battlefield\OOSE_LABOR_PROJECT\ASM_Sample\Debug</WORKING_DIR>
+ <INCLUDE_PATH>
+  <DIR>C:/Program Files (x86)\Atmel\Studio\7.0\Packs\atmel\ATmega_DFP\1.6.364\avrasm\inc</DIR>
+  <DIR>C:\Program Files (x86)\Atmel\Studio\7.0\toolchain\avr8\avrassembler\Include</DIR>
+  <DIR></DIR>
+ </INCLUDE_PATH>
+ <SOURCE_FILE>C:\Users\Me\Desktop\Coolyeah\OoSe\Code_Battlefield\OOSE_LABOR_PROJECT\ASM_Sample\main.asm</SOURCE_FILE>
+ <INCLUDED_FILES>
+  <FILE>C:/Program Files (x86)\Atmel\Studio\7.0\Packs\atmel\ATmega_DFP\1.6.364\avrasm\inc\m2560def.inc</FILE>
+ </INCLUDED_FILES>
+ <OBJECT_FILES>
+  <FILE>C:\Users\Me\Desktop\Coolyeah\OoSe\Code_Battlefield\OOSE_LABOR_PROJECT\ASM_Sample\Debug\ASM_Sample.obj</FILE>
+ </OBJECT_FILES>
+ <HEX_FILES>
+  <FILE>ASM_Sample.hex</FILE>
+ </HEX_FILES>
+ <OUTPUT_FILES>
+  <FILE>ASM_Sample.map</FILE>
+  <FILE>ASM_Sample.lss</FILE>
+ </OUTPUT_FILES>
+ <LABELS>
+  <init><FILE>C:\Users\Me\Desktop\Coolyeah\OoSe\Code_Battlefield\OOSE_LABOR_PROJECT\ASM_Sample\main.asm</FILE><LINE>13</LINE></init>
+  <main><FILE>C:\Users\Me\Desktop\Coolyeah\OoSe\Code_Battlefield\OOSE_LABOR_PROJECT\ASM_Sample\main.asm</FILE><LINE>23</LINE></main>
+  <check_sw0><FILE>C:\Users\Me\Desktop\Coolyeah\OoSe\Code_Battlefield\OOSE_LABOR_PROJECT\ASM_Sample\main.asm</FILE><LINE>29</LINE></check_sw0>
+  <check_sw1><FILE>C:\Users\Me\Desktop\Coolyeah\OoSe\Code_Battlefield\OOSE_LABOR_PROJECT\ASM_Sample\main.asm</FILE><LINE>34</LINE></check_sw1>
+  <show_leds><FILE>C:\Users\Me\Desktop\Coolyeah\OoSe\Code_Battlefield\OOSE_LABOR_PROJECT\ASM_Sample\main.asm</FILE><LINE>44</LINE></show_leds>
+  <check_sw2><FILE>C:\Users\Me\Desktop\Coolyeah\OoSe\Code_Battlefield\OOSE_LABOR_PROJECT\ASM_Sample\main.asm</FILE><LINE>39</LINE></check_sw2>
+ </LABELS>
+</ASSEMBLER_INFO>
